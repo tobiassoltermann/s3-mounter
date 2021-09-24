@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: acct-s3
+data:
+  S3MNT_KEY_ID: 7PVZPYHUDXRQ2ANMSYTK
+  S3MNT_SECRET: "AYnF4srwHvG5M4yF5Rq5KsSRApWo/Q8IrbQwO/2J80Q"
+  S3MNT_URL: "https://fra1.digitaloceanspaces.com"
+  S3MNT_USE_PATHREQUESTSTYLE: "y"
+  S3MNT_BUCKET: "darkspot-scc"

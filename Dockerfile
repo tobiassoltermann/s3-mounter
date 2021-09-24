@@ -1,8 +1,8 @@
 FROM alpine:3.3
 
 ENV S3MNT_MOUNTPOINT /var/s3fs
-ENV S3MNT_OPTS "-o passwdfile=passwd"
-ARG S3FS_VERSION=v1.86
+ENV S3MNT_OPTS "-o passwd_file=passwd"
+ARG S3FS_VERSION=v1.80
 
 RUN apk --update --no-cache add fuse alpine-sdk automake autoconf libxml2-dev fuse-dev curl-dev git bash; \
     git clone https://github.com/s3fs-fuse/s3fs-fuse.git; \
