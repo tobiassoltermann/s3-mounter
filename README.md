@@ -2,6 +2,7 @@
 
 Mount s3 buckets into pods in k8s. This image is a fork from meain/s3-mounter, mainly to support adding custom S3 providers, as well as the specification of additional options passed to s3fs.
 
+[![Publish Docker image](https://github.com/tobiassoltermann/s3-mounter/actions/workflows/publish-dockerhub.yml/badge.svg)](https://github.com/tobiassoltermann/s3-mounter/actions/workflows/publish-dockerhub.yml)
 # Parameters
 
 
