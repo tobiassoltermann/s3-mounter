@@ -7,10 +7,6 @@
 # To get a newer version, you will need to update the SHA.
 # You can also reference a tag or branch, but the action may change without warning.
 
-permissions:
-  contents: read
-  pages: read
-  id-token: write
 
 name: Publish Docker image
 
@@ -45,11 +41,3 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: tobiassoltermann/s3-mounter:latest
-      
-      
-      - name: Generate artifact attestation
-        uses: actions/attest-build-provenance@v1
-        with:
-          subject-name: docker.io/tobiassoltermann/s3-mounter:latest
-          subject-digest: ${{ steps.push.outputs.digest }}
-          push-to-registry: true
